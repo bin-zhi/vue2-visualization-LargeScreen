@@ -1,0 +1,44 @@
+//  全局样式
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a {
+  color: #343440;
+  text-decoration: none;
+}
+.sizeone,
+.sizetwo,
+.sizeThree {
+  font-size: 20px;
+  text-align: center;
+  font-family: cursive;
+  letter-spacing: 3px;
+}
+.sizeone {
+  color: $succeedColor;
+}
+.sizetwo {
+  color: $failColor;
+}
+.sizeThree {
+  color: $warnColor;
+}
