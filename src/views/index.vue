@@ -87,7 +87,10 @@ import RightBottom from './right-bottom.vue'
 export default {
   mixins: [drawMixin],
   data() {
-    return {}
+    return {
+      decorationColor: ['#568aea', '#000000'],
+      loading: true,
+    }
   },
   components: {
     LeftTop,
@@ -99,7 +102,9 @@ export default {
     RightCenter,
     RightBottom,
   },
-  mounted() {},
+  mounted() {
+    this.cancelLoading()
+  },
   //
   beforeDestroy() {},
   methods: {
